@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Payments</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-left">
+        <div class="brand">
+          <img src="./images/logoPayme.png" alt="logo" width="100" />
+          <span>Company</span>
+        </div>
+        <section class="row">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-1">VISA</a></li>
+            <li class=""><a href="#tab-2">UZCARD</a></li>
+            <li class=""><a href="#tab-3">HUMO</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+              <img
+                src="./images/visaLogo.png"
+                alt="logo"
+                width="100"
+                class="paylogo"
+              />
+              <form action="#visa">
+                <label for="visanumber">Номер карты</label>
+                <input
+                  type="number"
+                  name="visanumber"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="16"
+                  id="visanumber"
+                  placeholder="1234  5678  9012  3456"
+                />
+                <div>
+                  <label for="visasrok">Срок действия</label>
+                  <input
+                    type="number"
+                    placeholder="ММ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                  <span>/</span>
+                  <input
+                    type="number"
+                    placeholder="ГГ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                </div>
+                <div class="cvv">
+                  <label for="cvv">Код</label>
+                  <input
+                    type="number"
+                    placeholder="CVV"
+                    maxlength="3"
+                    id="visasvv"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  />
+                </div>
+                <button type="submit">Заплатить</button>
+              </form>
+            </div>
+            <div id="tab-2" class="tab-pane">
+              <img
+                src="./images/uzcardLogo.png"
+                alt="logo"
+                width="100"
+                class="paylogo"
+              />
+              <form action="#visa">
+                <label for="visanumber">Номер карты</label>
+                <input
+                  type="number"
+                  name="visanumber"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="16"
+                  id="visanumber"
+                  placeholder="1234  5678  9012  3456"
+                />
+                <div>
+                  <label for="visasrok">Срок действия</label>
+                  <input
+                    type="number"
+                    placeholder="ММ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                  <span>/</span>
+                  <input
+                    type="number"
+                    placeholder="ГГ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                </div>
+               
+                <button type="submit">Заплатить</button>
+              </form>
+            </div>
+            <div id="tab-3" class="tab-pane">
+              <img
+                src="./images/humoLogo.png"
+                alt="logo"
+                width="100"
+                class="paylogo"
+              />
+              <form action="#visa">
+                <label for="visanumber">Номер карты</label>
+                <input
+                  type="number"
+                  name="visanumber"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="16"
+                  id="visanumber"
+                  placeholder="1234  5678  9012  3456"
+                />
+                <div>
+                  <label for="visasrok">Срок действия</label>
+                  <input
+                    type="number"
+                    placeholder="ММ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                  <span>/</span>
+                  <input
+                    type="number"
+                    placeholder="ГГ"
+                    id="visasrok"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="2"
+                  />
+                </div>
+               
+                <button type="submit">Заплатить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="content-right"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
