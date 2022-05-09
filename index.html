@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Payments</title>
   </head>
   <body>
@@ -15,19 +22,15 @@
           <span>Company</span>
         </div>
         <section class="row">
+          <h1 class="mb-2">Payment method</h1>
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab-1">VISA</a></li>
-            <li class=""><a href="#tab-2">UZCARD</a></li>
-            <li class=""><a href="#tab-3">HUMO</a></li>
+            <li class="active"><a href="#tab-1">Card number</a></li>
+            <li class=""><a href="#tab-2">SMS Verification</a></li>
+            <li class=""><a href="#tab-3">Order Address</a></li>
           </ul>
           <div class="tab-content">
             <div id="tab-1" class="tab-pane active">
-              <img
-                src="./images/visaLogo.png"
-                alt="logo"
-                width="100"
-                class="paylogo"
-              />
+              <img src="./images/templateCard.png" alt="logo" class="paylogo" />
               <form action="#visa">
                 <label for="visanumber">Номер карты</label>
                 <input
@@ -66,7 +69,7 @@
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   />
                 </div>
-                <button type="submit">Заплатить</button>
+                <button type="submit">Confirm number</button>
               </form>
             </div>
             <div id="tab-2" class="tab-pane">
@@ -104,7 +107,7 @@
                     maxlength="2"
                   />
                 </div>
-               
+
                 <button type="submit">Заплатить</button>
               </form>
             </div>
@@ -143,14 +146,40 @@
                     maxlength="2"
                   />
                 </div>
-               
-                <button type="submit">Заплатить</button>
+
+                <button type="submit">Confirm number</button>
               </form>
             </div>
           </div>
         </section>
       </div>
-      <div class="content-right"></div>
+      <div class="content-right">
+        <h1>Order Product</h1>
+        <div class="order-product d-flex">
+          <div class="d-flex">
+            <img src="./images/card.png" alt="card" />
+            <span>Step 1 <br />Card Number</span>
+          </div>
+          <div class="d-flex">
+            <img src="./images/sms.png" alt="card" />
+            <span>Step 2 <br />Verification</span>
+          </div>
+          <div class="d-flex">
+            <img src="./images/backet.png" alt="card" />
+            <span>Step 3 <br />Order Form</span>
+          </div>
+        </div>
+        <div class="collapse">
+          Order Details <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div class="collapse-content">
+          <p>Leather mini-bag</p>
+          <p>Estimated-shipping</p>
+          <p>Discount</p>
+          <p>Total</p>
+          <p>Information !</p>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
